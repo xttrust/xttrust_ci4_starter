@@ -12,4 +12,11 @@ class Home extends BaseController
         
         return $this->templates::public($data);
     }
+
+
+    public function category($categoryName, $product) 
+    {
+        echo $categoryName . ' - ' . $product;
+    }
+
 }
